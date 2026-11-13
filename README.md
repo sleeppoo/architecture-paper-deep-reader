@@ -1,6 +1,6 @@
 # architecture-paper-deep-reader
 
-面向博士研究生的计算机体系结构与系统论文深度精读 Codex Skill（V2）。输入本地 PDF，输出可保存的中文 Markdown 笔记。
+面向博士研究生的计算机体系结构与系统论文深度精读 Codex Skill（V3）。输入本地 PDF，输出可保存的中文 Markdown 笔记。
 
 ## 功能
 
@@ -37,7 +37,7 @@ python scripts/prepare_pdf.py input.pdf --out work --pages 3,5-7
 
 - SKILL.md：触发场景、证据规则和流程。
 - references/analysis.md：技术深析规范。
-- references/template.md：十二章输出模板。
+- references/template.md：十一章输出模板。
 - references/experiments.md：实验组织与编号规则。
 - references/quality.md：交付检查。
 - scripts/prepare_pdf.py：PDF提取和渲染。
@@ -47,3 +47,7 @@ python scripts/prepare_pdf.py input.pdf --out work --pages 3,5-7
 已通过 Skill 结构检查及合成 PDF 提取/渲染测试，并使用 InstAttention（HPCA 2025）进行笔记迭代。没有复现论文实验。双栏阅读顺序需要视觉复核；扫描件需额外 OCR；脚本不自动判断科学结论是否正确。缺失证据必须披露，不补造内容。
 
 仓库不包含论文 PDF、私人阅读材料或生成笔记。许可证尚未指定。
+
+## V3新增
+
+团队与相关工作核验、技术延伸阅读、分层问题审查，以及代码仓库静态软件复现评估。默认不安装依赖、不下载大型资产、不编译运行论文代码或实验、不改变现有环境；只有用户明确要求实际执行才进入相应流程。静态可行性不是成功复现。

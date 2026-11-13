@@ -4,3 +4,6 @@ __pycache__/
 work/
 output/
 *.pdf
+
+# Machine-specific output preferences
+references/output-location.local.md
